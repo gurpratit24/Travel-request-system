@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  background: #1e3a5f;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  color: white;
+}
+
+.header h2 {
+  margin: 5px 0;
+  color: white;
+}
+
+.header p {
+  margin: 0;
+  color: white;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+  background: white;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dbe2ea;
+}
+
+.navbar button {
+  padding: 10px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background: #e5edf7;
+}
+
+.navbar .nav-active {
+  background: #1e3a5f;
+  color: white;
+  border-color: #1e3a5f;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  width: 90%;
+  max-width: 850px;
+  margin: 25px auto;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+  background: white;
+  padding: 25px;
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #1e3a5f;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #334155;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #b8c2cc;
+  border-radius: 6px;
+  background: white;
+  color: #1f2937;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+select option {
+  background: white;
+  color: #1f2937;
+}
+
+button {
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.main-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 6px;
+}
+
+.main-button:hover {
+  background: #1d4ed8;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-button {
+  background: #64748b;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 6px;
+}
+
+
+/* =========================
+   PAGE SIZE
+========================= */
+
+.page-size {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.page-size label {
+  margin-top: 0;
+}
+
+
+/* =========================
+   REQUEST CARD
+========================= */
+
+.request-card {
+  background: #f8fafc;
+  border: 1px solid #dbe2ea;
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.request-card p {
+  margin: 7px 0;
+}
+
+
+/* =========================
+   REQUEST BUTTONS
+========================= */
+
+.request-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-button {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 6px;
+}
+
+.delete-button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 6px;
+}
+
+
+/* =========================
+   APPROVE / REJECT
+========================= */
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.approve-button {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 6px;
+}
+
+.reject-button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 6px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+  font-weight: bold;
+  color: #1e3a5f;
+}
+
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+  color: #1f2937;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #e5edf7;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-weight: bold;
+  color: #334155;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message {
+  margin-top: 15px;
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-box {
+  width: 90%;
+  max-width: 420px;
+  margin: 70px auto;
+  background: white;
+  padding: 30px;
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #1e3a5f;
+  margin-top: 0;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #334155;
+}
+
+.login-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+.logout-button {
+  display: block;
+  margin: 25px auto;
+  background: #334155;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.logout-button:hover {
+  background: #1e293b;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar button {
+    width: 100%;
+  }
+
+  .dashboard {
+    width: 94%;
+  }
+
+  .form-buttons,
+  .request-buttons,
+  .action-buttons,
+  .pagination {
+    flex-direction: column;
+  }
+
+  .form-buttons button,
+  .request-buttons button,
+  .action-buttons button {
+    width: 100%;
+  }
+
+}
